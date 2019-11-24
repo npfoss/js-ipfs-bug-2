@@ -1,0 +1,22 @@
+{
+  "name": "js-ipfs-bug-2",
+  "version": "1.0.0",
+  "description": "repro code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npfoss/js-ipfs-bug-2.git"
+  },
+  "author": "npfoss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/npfoss/js-ipfs-bug-2/issues"
+  },
+  "homepage": "https://github.com/npfoss/js-ipfs-bug-2#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
