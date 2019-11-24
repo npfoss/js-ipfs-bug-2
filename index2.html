@@ -8,7 +8,7 @@
       const node = await window.Ipfs.create()
       // Ready to use!
       // See https://github.com/ipfs/js-ipfs#core-api
-      const dirs = await node.files.rm('/test');
+      const dirs = await node.files.ls('/');
       console.log('dirs: ', dirs);
       console.log('^that shouldn\'t be empty');
     }
