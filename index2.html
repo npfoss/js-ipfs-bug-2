@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/ipfs@0.39.0/dist/index.js"></script>
+  </head>
+  <script>
+    async function main () {
+      const node = await window.Ipfs.create()
+      // Ready to use!
+      // See https://github.com/ipfs/js-ipfs#core-api
+      const dirs = await node.files.rm('/test');
+      console.log('dirs: ', dirs);
+      console.log('^that shouldn\'t be empty');
+    }
+    main()
+  </script>
+  <body>
+    <h1> IPFS v 0.39.0</h1>
+    <p>
+      check the console again
+    </p>
+  </body>
+</html>

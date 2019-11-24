@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/ipfs@0.38.1/dist/index.js"></script>
+  </head>
+  <script>
+    async function main () {
+      const node = await window.Ipfs.create()
+      // Ready to use!
+      // See https://github.com/ipfs/js-ipfs#core-api
+      const dirs = await node.files.ls('/');
+      console.log('dirs: ', dirs);
+      if (!('test' in dirs)){
+        await node.files.mkdir('/test');
+        const dirs2 = await node.files.ls('/');
+        console.log('dirs now: ', dirs2);
+      }
+    }
+    main()
+  </script>
+  <body>
+    <h1> IPFS v 0.38.1</h1>
+    <p>
+      check the console and then click <a href="/index2.html">here</a>
+    </p>
+  </body>
+</html>
